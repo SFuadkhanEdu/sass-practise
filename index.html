@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home page</title>
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="./assets/js/navbar.js"></script>
+  </head>
+  <body>
+    <!-- nav -->
+    <nav class="container flex" id="navbar_large">
+      <div id="navbar_left"><a href="">Start Bootstrap</a></div>
+      <div id="navbar_right">
+        <ul class="flex" id="navbar_links_ul">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="">Contact</a></li>
+          <li><a href="">Pricing</a></li>
+          <li><a href="">FAG</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Portfolio</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- nav -->
+    <!-- nav -->
+    <nav class="container flex" id="navbar_small">
+      <div id="navbar_left">
+        <a id="brand">Start Bootstrap</a>
+        <ul id="navbar_small__ul">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="">Contact</a></li>
+          <li><a href="">Pricing</a></li>
+          <li><a href="">FAG</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Portfolio</a></li>
+        </ul>
+      </div>
+      <div id="toggle_menu">
+        <button onclick="toggle()"><i class="fa-solid fa-bars"></i></button>
+      </div>
+    </nav>
+    <!-- nav -->
+    <!-- header -->
+    <header class="flex container" id="home_header">
+      <div class="flex" id="header__text_box">
+        <h1>A Bootstrap 5 template for modern businesses</h1>
+        <p>
+          Quickly design and customize responsive mobile-first sites with
+          Bootstrap, the world’s most popular front-end open source toolkit!
+        </p>
+        <div class="flex" id="header__text_box__buttons">
+          <button id="get_started">Get Started</button>
+          <button id="learn_more">Learn More</button>
+        </div>
+      </div>
+      <div id="header__image">
+        <img src="https://dummyimage.com/600x400/343a40/6c757d" alt="" />
+      </div>
+    </header>
+    <!-- header -->
+
+    <!-- footer -->
+    <footer class="flex container" id="footer">
+      <div id="footer__copyright_box">
+        <p>Copyright © Your Website 2023</p>
+      </div>
+      <div>
+        <ul class="flex" id="footer__ul">
+          <li><a href="">Privacy</a></li>
+          <li>·</li>
+          <li><a href="">Terms</a></li>
+          <li>·</li>
+          <li><a href="">Contacts</a></li>
+        </ul>
+      </div>
+    </footer>
+    <!-- footer -->
+  </body>
+</html>

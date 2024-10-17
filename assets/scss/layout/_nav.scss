@@ -1,0 +1,72 @@
+@import './../utils/variables';
+#navbar_large{
+    height: 40px !important;
+    background-color: $nav-bg-color;
+}
+#navbar_large{
+    justify-content: space-between;
+}
+#navbar_left{
+    #brand{
+        font-family: $body-font-family;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+}
+#navbar_links_ul{
+    gap: 20px;
+}
+#navbar_left a{
+    font-weight: 800;
+    color: $nav-logo-color;
+}
+#navbar_links_ul {
+    li{
+        a{
+            color: $nav-links-color;
+            font-family: $body-font-family;
+        }
+    }
+}
+
+
+#navbar_small{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    align-items: flex-start;
+    min-height: 40px;
+    background-color: $nav-bg-color;
+    display: none;
+    justify-content: space-between;
+    
+    ul{
+        height: 0px;
+        overflow: hidden;
+        gap: 10px;
+        transition: height 300ms ease;
+        li{
+            a{
+                color: $nav-links-color;
+                font-family: $body-font-family;
+                font-weight: 400;
+            }
+        }
+    }
+}
+#toggle_menu button{
+    padding: 0.25rem 0.75rem;
+    background-color: transparent;
+    border: 1px solid $nav-links-color;
+    i{
+        color: $nav-links-color;
+    }
+}
+
+@media screen and (max-width:992px) {
+    #navbar_large{
+        display: none;
+    }
+    #navbar_small{
+        display: flex;
+    }
+}
